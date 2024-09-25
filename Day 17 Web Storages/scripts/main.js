@@ -35,26 +35,45 @@ const personAccount = {
   lastName: "Hieu",
   incomes: 0,
   expensesProperties: 0,
-  totalIncome: function() {
-    return this.incomes
+  totalIncome: function () {
+    return this.incomes;
   },
-  totalExpense: function() {
-    return this.expensesProperties
+  totalExpense: function () {
+    return this.expensesProperties;
   },
-  accountInfo: function() {
-    return this.firstName + ' ' +this.lastName + ': ' + this.incomes + ', ' + this.expensesProperties
+  accountInfo: function () {
+    return (
+      this.firstName +
+      " " +
+      this.lastName +
+      ": " +
+      this.incomes +
+      ", " +
+      this.expensesProperties
+    );
   },
-  addIncome: function() {
-    let newIncome = +prompt('Add new income:')
-    return this.incomes += newIncome
+  addIncome: function () {
+    let newIncome = +prompt("Add new income:");
+    return (this.incomes += newIncome);
   },
-  addExpense: function() {
-    let newExpense = +prompt('Add new expense:')
-    return this.expensesProperties += newExpense
+  addExpense: function () {
+    let newExpense = +prompt("Add new expense:");
+    return (this.expensesProperties += newExpense);
   },
-  accountBalance: function() {
-    return 'Hello!'
-  }
+  accountBalance: function () {
+    return "Hello!";
+  },
 };
-const personAccountObj = JSON.stringify(personAccount, ['firstName', 'lastName', 'incomes', 'expensesProperties', personAccount.addExpense(), personAccount.accountBalance()], 4);
+const personAccountObj = JSON.stringify(
+  personAccount,
+  [
+    "firstName",
+    "lastName",
+    "incomes",
+    "expensesProperties",
+    personAccount.addExpense(),
+    personAccount.accountBalance(),
+  ],
+  4
+);
 localStorage.setItem("Person Account", personAccountObj);
