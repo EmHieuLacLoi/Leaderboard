@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>World Countries List</title>
+    <link rel="stylesheet" href="./styles/resetCSS.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/191b47f26a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="background-blur"></div>
+      <h1>World Countries List</h1>
+      <h2>Total number of countries:</h2>
+      <h3></h3>
+
+      <div class="search-option">
+        <button class="sort">STARTING WORD</button>
+        <button class="sort">SEARCH WITH ANY WORD</button>
+        <button class="sort"><i class="fa-solid fa-arrow-down-a-z"></i></button>
+      </div>
+
+      <div class="search-input">
+        <input type="text" id="search" placeholder="Search country...."/>
+        <button class="no-impact">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="result">
+    </div>
+
+    <script src="./data/countries.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

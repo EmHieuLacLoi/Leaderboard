@@ -1,0 +1,105 @@
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    height: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background-blur {
+    background: url("../images/globe-2.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    filter: contrast(0.5);
+}
+
+h1, h2, h3, .search-option, .search-input{
+    position: relative;
+    z-index: 2;
+}
+
+h1, h2, h3 {
+    margin: 5px;
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.search-option {
+    margin: 20px 0;
+}
+.search-option .sort {
+    padding: 10px 10px;
+    margin: 0 1px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: 2px solid;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.search-option .active, 
+.search-option .sort:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(48, 41, 41);
+}
+
+.search-input {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#search{
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 70%;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+}
+
+#search:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.search-input .no-impact {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 30px;
+    margin-left: 15px;
+    color: white;
+}
+
+.search-input .no-impact:hover {
+    cursor: pointer;
+    color: #ccc;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    background-color: #e7e4b3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
