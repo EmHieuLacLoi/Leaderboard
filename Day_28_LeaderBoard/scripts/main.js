@@ -58,6 +58,7 @@ button.addEventListener("click", () => {
     // gán text thông báo và màu cho thẻ error-message
     message.textContent = "All fields are required!";
     message.style.color = "red";
+    message.style.margin = '10px 10px'
   }
   //   điều kiện đúng
   else {

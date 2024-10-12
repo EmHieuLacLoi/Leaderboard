@@ -15,7 +15,7 @@ h1 {
 #input {
   width: 80%;
   text-align: center;
-  height: 90px;
+  height: 100px;
 }
 input,
 #input > button {
